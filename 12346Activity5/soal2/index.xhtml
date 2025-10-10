@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Reservation Hotel Room</title>
+<style type="text/css">
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+h1 { font-size:18px; margin:0 0 8px 0; }
+fieldset {
+  margin:8px 0;
+  padding:8px 12px;
+  border:1px solid #999;
+}
+legend { font-size:12px; padding:0 4px; }
+.tbl { width:100%; border-collapse:collapse; }
+.tbl td { vertical-align:top; padding:6px 8px; }
+.label { width:140px; white-space:nowrap; }
+input[type="text"] {
+  width:140px;
+}
+select { width:150px; }
+.radio-inline { margin-right:12px; }
+.submit-row { margin-top:6px; }
+</style>
+</head>
+<body>
+<h1>Reservation Hotel Room</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+<fieldset>
+<legend>Personal Date</legend>
+<table class="tbl" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="label">1. Name</td>
+    <td><input type="text" id="name" name="name" /></td>
+  </tr>
+  <tr>
+    <td class="label">2. Gender</td>
+    <td>
+    
+      <input type="text" id="gender" name="gender" />
+    </td>
+  </tr>
+  <tr>
+    <td class="label">3. Email Address</td>
+    <td><input type="text" id="email" name="email" /></td>
+  </tr>
+  <tr>
+    <td class="label">4. Telp Number</td>
+    <td><input type="text" id="telp" name="telp" /></td>
+  </tr>
+</table>
+</fieldset>
+
+
+<fieldset>
+<legend>Reservation Room form</legend>
+<table class="tbl" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="label">1. Reservaton Name</td>
+    <td><input type="text" id="resname" name="resname" /></td>
+  </tr>
+  <tr>
+    <td class="label">2. Booking date</td>
+    <td><input type="text" id="bookdate" name="bookdate" /></td>
+  </tr>
+  <tr>
+    <td class="label">3. Room Type</td>
+    <td>
+      <select id="roomtype" name="roomtype">
+        <option>Deluxe</option>
+        <option>Superior</option>
+        <option>Standard</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">4. Bed Type</td>
+    <td>
+      <select id="bedtype" name="bedtype">
+        <option>Single bed</option>
+        <option>Double bed</option>
+        <option>King bed</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="label">5. Breakfast</td>
+    <td>
+      <span class="radio-inline">
+        <input type="radio" id="with" name="breakfast" value="with" />
+        <label for="with">With Breakfast</label>
+      </span>
+      <span class="radio-inline">
+        <input type="radio" id="without" name="breakfast" value="without" />
+        <label for="without">Without Breakfast</label>
+      </span>
+    </td>
+  </tr>
+</table>
+</fieldset>
+
+
+<fieldset>
+<legend>Payment</legend>
+<table class="tbl" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="label">1. Check in date</td>
+    <td><input type="text" id="checkin" name="checkin" /></td>
+  </tr>
+  <tr>
+    <td class="label">2. Check out date</td>
+    <td><input type="text" id="checkout" name="checkout" /></td>
+  </tr>
+  <tr>
+    <td class="label">3. Payment Method</td>
+    <td>
+      <select id="payment" name="payment">
+        <option>cash</option>
+        <option>credit card</option>
+        <option>debit</option>
+      </select>
+    </td>
+  </tr>
+</table>
+</fieldset>
+
+<p class="submit-row"><input type="submit" name="submit" value="submit" /></p>
+
+</form>
+</body>
+</html>
