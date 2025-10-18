@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservasi Hotel</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <h1>Form Reservasi Hotel</h1>
+
+  <form action="" method="post">
+    <fieldset>
+      <legend>Data Pribadi</legend>
+      <table>
+        <tr>
+          <td class="label">Nama Lengkap</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td class="label">Jenis Kelamin</td>
+          <td><input type="text" name="gender" /></td>
+        </tr>
+        <tr>
+          <td class="label">Email</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td class="label">Nomor Telepon</td>
+          <td><input type="text" name="telp" /></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Data Reservasi</legend>
+      <table>
+        <tr>
+          <td class="label">Nama Pemesan</td>
+          <td><input type="text" name="resname" /></td>
+        </tr>
+        <tr>
+          <td class="label">Tanggal Pemesanan</td>
+          <td><input type="text" name="bookdate" /></td>
+        </tr>
+        <tr>
+          <td class="label">Tipe Kamar</td>
+          <td>
+            <select name="roomtype">
+              <option>Deluxe</option>
+              <option>Superior</option>
+              <option>Standard</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Tipe Tempat Tidur</td>
+          <td>
+            <select name="bedtype">
+              <option>Single</option>
+              <option>Double</option>
+              <option>King</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Sarapan</td>
+          <td>
+            <input type="radio" name="breakfast" value="with" /> Dengan Sarapan
+            <input type="radio" name="breakfast" value="without" /> Tanpa Sarapan
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pembayaran</legend>
+      <table>
+        <tr>
+          <td class="label">Tanggal Check-in</td>
+          <td><input type="text" name="checkin" /></td>
+        </tr>
+        <tr>
+          <td class="label">Tanggal Check-out</td>
+          <td><input type="text" name="checkout" /></td>
+        </tr>
+        <tr>
+          <td class="label">Metode Pembayaran</td>
+          <td>
+            <select name="payment">
+              <option>Cash</option>
+              <option>Credit Card</option>
+              <option>Debit</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <p>
+      <input id="submit-button" type="submit" value="Kirim" />
+    </p>
+  </form>
+</body>
+</html>
